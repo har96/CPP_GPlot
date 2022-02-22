@@ -24,6 +24,7 @@ int main() {
         y[i] += 1;
     }
     plt.plot(x, y, "Offset", true, "#B0A510", 0, 5);
+    plt.scatter(y, x, "Scatter offset");
 
     plt.setLabelFont(12);
     plt.setTitleFont(15);

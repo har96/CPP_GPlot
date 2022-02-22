@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include <iostream>
+#include <vector>
 
 
 class GNUPlot {
@@ -85,7 +86,7 @@ void GNUPlot::plot(ContainerX const& x, ContainerY const& y,
 }
 
 /// Draw a scatter plot
-template<class ContainerX, class ContainerY, class ContainerZ=std::nullptr_t>
+template<class ContainerX, class ContainerY, class ContainerZ=std::vector<int>>
 void GNUPlot::scatter(ContainerX const& x, ContainerY const& y,
         std::string name,
         ContainerZ const* labels,
